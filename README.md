@@ -77,7 +77,8 @@ Descreva como você avalia a qualidade do Edu:
 
 - **Métricas de Qualidade:** Assertividade, segurança, coerência, relevância
 - **Métricas de Usuário:** Satisfação, engajamento, retenção
-- **Métricas Técnicas:** Latência, throughput, custo
+- **Métricas Técnicas:** Latência, throughput, custo, taxa de erro, uptime
+- **Métricas Avançadas:** Taxa de alucinação, precisão, relevância (BLEU), NPS, retenção
 - **Cenários de Teste:** 5 testes estruturados com perguntas e respostas esperadas
 
 📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
