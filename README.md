@@ -33,14 +33,14 @@ Defina **o que** seu agente faz e **como** ele funciona:
 
 Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+| Arquivo | Formato | Utilização no Agente |
+|---------|---------|---------------------|
+| `transacoes.csv` | CSV | Analisar padrões de gastos e fornecer alertas ou insights |
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores e histórico de atendimentos |
+| `perfil_investidor.json` | JSON | Personalizar recomendações baseadas no perfil de risco e metas |
+| `produtos_financeiros.json` | JSON | Sugerir produtos financeiros adequados ao perfil e objetivos |
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
+Os dados são carregados em Python (Pandas para CSV, json para JSON) com pré-processamento para agregações (ex: totais por categoria), e integrados dinamicamente nos prompts do LLM via Ollama para personalização e insights.
 
 📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
 

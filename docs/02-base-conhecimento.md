@@ -2,7 +2,7 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
+Os dados mockados na pasta `data/` alimentam o agente Edu, permitindo respostas personalizadas e insights financeiros baseados no perfil do usuário.
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
@@ -11,30 +11,11 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `produtos_financeiros.json` | JSON | Sugerir produtos financeiros adequados ao perfil e objetivos |
 | `transacoes.csv` | CSV | Analisar padrões de gastos e fornecer alertas ou insights |
 
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
-
 ---
 
-## Adaptações nos Dados
+## Como os Dados São Integrados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
-
-Os dados foram utilizados conforme fornecidos na pasta `data/`, sem modificações iniciais. Futuramente, podemos expandir o dataset com mais transações ou produtos para testar cenários adicionais, ou integrar dados públicos do Hugging Face para enriquecer a base de conhecimento.
-
----
-
-## Estratégia de Integração
-
-### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
-
-Os arquivos CSV e JSON são carregados no início da aplicação Python usando bibliotecas como Pandas (para CSV) e json (para JSON). Os dados são processados e armazenados em estruturas de dados (ex: DataFrames e dicionários) para acesso rápido durante a sessão.
-
-### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
-
-Os dados relevantes são incluídos dinamicamente no prompt enviado ao LLM via Ollama. Por exemplo, o perfil do investidor e produtos compatíveis são formatados e adicionados ao contexto do prompt para personalizar as respostas, garantindo que o agente responda com base em informações precisas.
+Os dados são processados para fornecer contexto relevante ao Edu, garantindo que as sugestões sejam personalizadas e baseadas em informações reais do usuário, como perfil de investimento e histórico de transações.
 
 ---
 
@@ -55,9 +36,18 @@ Dados do Cliente:
 - Aceita Risco: Não
 - Metas: Completar reserva de emergência (R$ 15.000,00 até 2026-06); Entrada de apartamento (R$ 50.000,00 até 2027-12)
 
+Resumo de Transações (último mês):
+- Receitas Totais: R$ 5.000,00
+- Despesas Totais: R$ 2.355,90
+- Principais Categorias: Moradia (R$ 1.200,00), Alimentação (R$ 470,00), Saúde (R$ 154,00)
+
 Produtos Financeiros Sugeridos (baseados no perfil):
 - Tesouro Selic (Risco: Baixo, Indicado para reserva de emergência)
 - CDB Liquidez Diária (Risco: Baixo, Indicado para segurança com rendimento diário)
+
+Histórico de Atendimentos Recentes:
+- 2025-10-01: Chat sobre Tesouro Selic - Explicação fornecida
+- 2025-10-12: Chat sobre metas financeiras - Acompanhamento do progresso
 
 Últimas transações:
 - 2025-10-01: Salário - Entrada R$ 5.000,00
