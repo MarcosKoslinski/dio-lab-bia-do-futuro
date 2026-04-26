@@ -48,11 +48,11 @@ Os dados são carregados em Python (Pandas para CSV, json para JSON) com pré-pr
 
 ### 3. Prompts do Agente
 
-Documente os prompts que definem o comportamento do seu agente:
+Documente os prompts que definem o comportamento do Edu:
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+- **System Prompt:** Instruções gerais de comportamento, regras de segurança e persona consultiva
+- **Exemplos de Interação:** Cenários de análise de gastos, sugestões de investimentos e acompanhamento de metas
+- **Tratamento de Edge Cases:** Admissão de limitações e redirecionamento para fontes confiáveis
 
 📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
 
