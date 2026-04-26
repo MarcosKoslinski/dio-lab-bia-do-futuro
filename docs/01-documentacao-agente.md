@@ -47,13 +47,13 @@ Acessível e informal, com toques técnicos quando necessário, evitando jargõe
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Consulta| B[Interface (Streamlit)]
-    B --> C[Análise de Dados (Python)]
+    A[Cliente] -->|Consulta| B[Interface]
+    B --> C[Análise de Dados]
     C --> D[Transações CSV]
     C --> E[Perfil Investidor JSON]
     C --> F[Produtos Financeiros JSON]
-    C --> G[LLM (Ollama)]
-    G --> H[Validação de Segurança]
+    C --> G[LLM]
+    G --> H[Validação]
     H --> I[Resposta Personalizada]
 ```
 
