@@ -73,11 +73,14 @@ Desenvolva um **protótipo funcional** do seu agente:
 
 ### 5. Avaliação e Métricas
 
-Descreva como você avalia a qualidade do seu agente:
+Descreva como você avalia a qualidade do Edu:
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
+- **Métricas de Qualidade:** Assertividade, segurança, coerência, relevância
+- **Métricas de Usuário:** Satisfação, engajamento, retenção
+- **Métricas Técnicas:** Latência, throughput, custo
+- **Cenários de Teste:** 5 testes estruturados com perguntas e respostas esperadas
+
+📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
 - Coerência com o perfil do cliente
 
 📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)

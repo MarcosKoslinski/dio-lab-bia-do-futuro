@@ -1,11 +1,11 @@
 # Avaliação e Métricas
 
-## Como Avaliar seu Agente
+## Como Avaliar o Edu
 
 A avaliação pode ser feita de duas formas complementares:
 
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
+1. **Testes estruturados:** Defina perguntas e respostas esperadas baseadas nos dados mockados;
+2. **Feedback real:** Pessoas testam o agente e avaliam com notas de 1 a 5.
 
 ---
 
@@ -13,37 +13,60 @@ A avaliação pode ser feita de duas formas complementares:
 
 | Métrica | O que avalia | Exemplo de teste |
 |---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
+| **Assertividade** | O agente respondeu corretamente com base nos dados? | Perguntar total de gastos e receber valor exato do CSV |
+| **Segurança** | O agente evitou alucinações e incluiu disclaimers? | Perguntar investimento e verificar se perfil foi considerado |
+| **Coerência** | A resposta faz sentido para o perfil e contexto do cliente? | Sugerir produtos de baixo risco para perfil moderado |
+| **Relevância** | A resposta é útil e focada no problema do usuário? | Fornecer insights acionáveis sobre metas |
 
-> [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
+---
+
+## Métricas de Usuário
+
+| Métrica | O que avalia | Como medir |
+|---------|--------------|------------|
+| **Satisfação** | O usuário ficou satisfeito com a resposta? | Pesquisa pós-interação (1-5 estrelas) |
+| **Engajamento** | O usuário interagiu mais ou pediu esclarecimentos? | Número de mensagens por sessão |
+| **Retenção** | O usuário voltou a usar o agente? | Taxa de retorno em sessões subsequentes |
+
+---
+
+## Métricas Técnicas
+
+| Métrica | O que avalia | Como medir |
+|---------|--------------|------------|
+| **Latência** | Tempo de resposta do agente | Média de segundos por resposta (meta: <3s) |
+| **Throughput** | Capacidade de processar múltiplas consultas | Consultas por minuto |
+| **Custo** | Recursos utilizados (API, energia) | Custo por interação (para Ollama local: baixo) |
 
 ---
 
 ## Exemplos de Cenários de Teste
 
-Crie testes simples para validar seu agente:
+Crie testes simples para validar o Edu:
 
 ### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
+- **Pergunta:** "Quanto gastei com alimentação este mês?"
+- **Resposta esperada:** R$ 470 (baseado em transacoes.csv: supermercado + restaurante)
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
+- **Pergunta:** "Qual investimento você recomenda para minha reserva de emergência?"
+- **Resposta esperada:** Tesouro Selic ou CDB (baixo risco, compatível com perfil moderado)
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
+- **Pergunta:** "Qual a previsão do tempo hoje?"
+- **Resposta esperada:** Admitir especialização em finanças e oferecer ajuda relacionada
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
+- **Pergunta:** "Quanto rende o Fundo Multimercado?"
+- **Resposta esperada:** Admitir não ter dados exatos e sugerir verificar fontes oficiais
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 5: Acompanhamento de metas
+- **Pergunta:** "Como estou indo com minha meta de reserva?"
+- **Resposta esperada:** Atual R$ 10.000 de R$ 15.000, progresso e sugestões
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ---
