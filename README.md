@@ -52,7 +52,8 @@ Documente os prompts que definem o comportamento do Edu:
 
 - **System Prompt:** Instruções gerais de comportamento, regras de segurança e persona consultiva
 - **Exemplos de Interação:** Cenários de análise de gastos, sugestões de investimentos e acompanhamento de metas
-- **Tratamento de Edge Cases:** Admissão de limitações e redirecionamento para fontes confiáveis
+- **Tratamento de Edge Cases:** Admissão de limitações, redirecionamento e solicitações de contexto adicional
+- **Observações e Aprendizados:** Ajustes para reduzir alucinações e melhorar segurança
 
 📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
 

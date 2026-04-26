@@ -122,7 +122,17 @@ Ei João! Sua meta é R$ 50.000 até dezembro de 2027. Com patrimônio atual de 
 
 ## Observações e Aprendizados
 
-> Registre aqui ajustes que você fez nos prompts e por quê.
+- **Few-Shot Prompting:** Incluir exemplos no system prompt reduz alucinações, garantindo respostas alinhadas com a persona e regras.
+- **Disclaimers Obrigatórios:** Sempre incluir avisos sobre não substituir consultoria profissional aumenta a segurança e confiabilidade.
+- **Verificação de Perfil:** Perguntar ou verificar perfil antes de sugestões evita recomendações inadequadas.
+- **Limitação de Escopo:** Redirecionar perguntas fora do tema mantém o foco em finanças e evita confusões.
+- **Contexto Dinâmico:** Inserir dados resumidos no prompt permite personalização sem sobrecarregar o LLM.
 
-- [Observação 1]
-- [Observação 2]
+---
+
+## Solicitação de Contexto
+
+Quando o agente precisar de mais informações para responder adequadamente, use frases como:
+- "Para te dar uma sugestão mais precisa, posso ver seu perfil de investidor?"
+- "Você tem alguma meta específica em mente? Me conta mais para eu ajudar melhor."
+- "Preciso de detalhes sobre suas transações recentes. Posso acessar seus dados?"
