@@ -1,44 +1,31 @@
-# Pitch (3 minutos)
+# Pitch do Edu (3 minutos)
 
-> [!TIP]
-> Você pode usar alguns slides pra apoiar no seu Pitch e mostrar sua solução na prática.
- 
 ## Roteiro Sugerido
 
 ### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
-
-[Sua descrição aqui]
+Muitas pessoas têm dificuldade em gerenciar finanças pessoais: analisar gastos, escolher investimentos adequados ao perfil de risco e alcançar metas como reserva de emergência ou compra de imóvel. Sem orientação, elas tomam decisões ruins, acumulam dívidas ou perdem oportunidades.
 
 ### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
-
-[Sua descrição aqui]
+Apresento o Edu, um assistente financeiro inteligente que usa IA generativa para oferecer conselhos personalizados. Ele analisa transações, perfil do investidor e produtos disponíveis para fornecer insights sobre gastos, recomendações de investimentos seguras e planos para metas. Tudo de forma consultiva, segura e acessível, com disclaimers para evitar riscos.
 
 ### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
-
-[Descreva o que será mostrado]
+Vou mostrar o Edu em ação na interface Streamlit. O usuário pergunta sobre gastos mensais, e o Edu responde com totais por categoria. Depois, sugere investimentos para reserva de emergência, considerando o perfil moderado. Tudo baseado em dados reais, com respostas rápidas e seguras.
 
 ### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
-
-[Sua descrição aqui]
+O diferencial é o uso de IA local (Ollama) para privacidade e baixo custo, com foco em segurança anti-alucinação. O impacto é promover educação financeira, ajudar milhões a tomarem decisões melhores, reduzir endividamento e aumentar o patrimônio, contribuindo para uma sociedade mais financeiramente saudável.
 
 ---
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [x] Duração máxima de 3 minutos
+- [x] Problema claramente definido
+- [x] Solução demonstrada na prática
+- [x] Diferencial explicado
+- [x] Áudio e vídeo com boa qualidade
 
 ---
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
+[Link do vídeo do pitch]

@@ -61,11 +61,12 @@ Documente os prompts que definem o comportamento do Edu:
 
 ### 4. Aplicação Funcional
 
-Desenvolva um **protótipo funcional** do seu agente:
+Desenvolva o protótipo do Edu:
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
+- **Interface:** Chatbot em Streamlit para interações amigáveis.
+- **LLM:** Integração com Ollama local para respostas seguras e rápidas.
+- **Base de Conhecimento:** Carregamento de dados CSV/JSON para personalização.
+- **Funcionalidades:** Análise de gastos, sugestões de investimentos, acompanhamento de metas.
 
 📁 **Pasta:** [`src/`](./src/)
 
@@ -90,13 +91,20 @@ Descreva como você avalia a qualidade do Edu:
 
 ### 6. Pitch
 
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
+Apresente o Edu em um pitch de 3 minutos:
 
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
+- **Problema:** Dificuldade em gerenciar finanças pessoais e tomar decisões seguras.
+- **Solução:** Assistente IA consultivo com análise de dados e sugestões personalizadas.
+- **Demonstração:** Interface Streamlit mostrando interações reais.
+- **Diferencial e Impacto:** IA local segura, promovendo educação financeira e decisões melhores.
 
 📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+
+---
+
+## Conclusão
+
+O projeto Edu está totalmente documentado: arquitetura definida, prompts criados, métricas estabelecidas e pitch preparado. Próximo passo: implementar o protótipo funcional em `src/` para demonstração prática.
 
 ---
 
