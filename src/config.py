@@ -1,7 +1,7 @@
 # Configurações do Edu
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL = "llama2"  # ou outro modelo suportado
+MODEL = "neural-chat"  # ou outro modelo suportado
 
 # Caminhos dos dados
 DATA_DIR = "../data/"
