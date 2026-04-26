@@ -20,10 +20,10 @@ Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots
 
 Defina **o que** seu agente faz e **como** ele funciona:
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+- **Caso de Uso:** Resolve dificuldades em gerenciar finanças pessoais, analisar gastos, escolher investimentos adequados ao perfil de risco e alcançar metas de longo prazo como reserva de emergência.
+- **Persona e Tom de Voz:** Agente chamado Edu, consultivo e amigável, acessível e informal, com toques técnicos quando necessário.
+- **Arquitetura:** Interface em Streamlit (Python), análise de dados com Pandas, LLM via Ollama local, validação para evitar alucinações.
+- **Segurança:** Respostas baseadas em dados mockados, uso de prompts estruturados, validação cruzada, inclusão de disclaimers e limitações declaradas.
 
 📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
 
